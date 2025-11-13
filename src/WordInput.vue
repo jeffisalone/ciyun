@@ -24,7 +24,7 @@ export default {
         try {
           // 先向API发送POST请求
           console.log('正在发送POST请求:', { word })
-          const response = await fetch('https://workspace.jeffisalone.site/ciyun', {
+          const response = await fetch('https://api.jeffisalone.site/ciyun', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'

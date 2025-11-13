@@ -53,7 +53,7 @@ export default {
     async fetchWordData() {
       try {
         // 恢复使用之前工作的API地址
-        const response = await fetch('https://workspace.jeffisalone.site/ciyun')
+        const response = await fetch('https://api.jeffisalone.site/ciyun')
         const data = await response.json()
         // 确保每个词都有value值，如果没有则默认为1
         this.words = data.map(word => ({
